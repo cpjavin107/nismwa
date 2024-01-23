@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@drawable/profile_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/white_bg" />
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:padding="1dp"
+                android:src="@drawable/profile_icon" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilePic"
+            android:gravity="center"
+            android:text="Register/Login"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/profilePic"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Happy singh"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Mobile:"
+                android:textColor="@android:color/white"
+                android:textSize="10dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/mobile"
+                android:text="+91- 000000000"
+                android:textColor="@android:color/white"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="CODE:"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/idNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/id"
+                android:text="ISC1000"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/idNumber"
+                android:numStars="5"
+                android:progressBackgroundTint="#F5B100"
+                android:progressTint="#F5B100"
+                android:rating="5"
+                android:secondaryProgressTint="#F5B100"
+                android:stepSize="1" />
+        </RelativeLayout>
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/llEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/viewBottom"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_gravity="top"
+            android:src="@drawable/edit_white" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:paddingLeft="3dp"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/viewBottom2"
+        android:background="@color/colorNavGray"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/viewBottom2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:visibility="visible" />
+
+</RelativeLayout>

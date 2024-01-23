@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlEventItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEventName"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@android:color/black" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDateTime"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text=""
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtDisc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAddress"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@android:color/black" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDisc"
+            android:background="@color/colorTransparentSeventyBlack"
+            android:drawableLeft="@android:drawable/ic_menu_gallery"
+            android:gravity="center_vertical"
+            android:text="Image"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

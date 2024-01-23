@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/one"
+            layout="@layout/common_header_layout" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_transparent_border_white"
+            android:hint="Enter mobile no."
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorEditHint"
+            android:textSize="15dp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etMobile"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorTransparentSeventyBlack"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="SUBMIT"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

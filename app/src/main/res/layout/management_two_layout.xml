@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <include layout="@layout/common_toolbar_gray"
+      android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="3.7"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rlOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorTransparentWhite">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/imgOne"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgOne"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTwo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorTransparentWhite">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/imgTwo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTwo"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="5.7"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/rlThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorTransparentWhite">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/imgThree"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgThree"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorTransparentWhite">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/imgFour"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgFour"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/rlFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorTransparentWhite">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/imgFive"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgFive"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSix"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorTransparentWhite">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/imgSix"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtSix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgSix"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtPrevious"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_transparent_border_white"
+            android:drawableTint="@android:color/white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Previous"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="10dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_transparent_border_white"
+            android:drawableTint="@android:color/white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="NEXT"
+            android:textColor="@android:color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

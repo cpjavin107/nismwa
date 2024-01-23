@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/navIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:src="@drawable/arrow_right_black"
+            android:tint="@color/colorNavGray"/>
+
+        <TextView
+            android:id="@+id/navTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Follow"
+            android:textColor="@color/colorNavGray"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/navArrowIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:alpha="0.3"
+            android:src="@android:drawable/arrow_down_float"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/navArrowIconUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:alpha="0.3"
+            android:src="@android:drawable/arrow_up_float"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/parentLayout"
+        android:background="@color/colorNavGray" />
+
+    <LinearLayout
+        android:id="@+id/subMenuItemParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parentLayout"
+        android:background="#999B9B"
+        android:orientation="vertical"
+        android:paddingLeft="72dp"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/personalTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="Sub 1"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/educationalTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="Sub 2"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/teachingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="Sub 3"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

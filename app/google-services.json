@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1086390937655",
+    "firebase_url": "https://nismwa-d3705.firebaseio.com",
+    "project_id": "nismwa-d3705",
+    "storage_bucket": "nismwa-d3705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086390937655:android:4ae08b39d5be8aed",
+        "android_client_info": {
+          "package_name": "com.javinindia.nismwa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086390937655-dp856gkahtg17mlju7vj53094rdu7pia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.javinindia.nismwa",
+            "certificate_hash": "aa0f36074f4b621e5ba86569edf16938e80e5d23"
+          }
+        },
+        {
+          "client_id": "1086390937655-dcd7pt7h0mf9ma9bebvc5dokqd3tb7ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALAixzFVyqn8fRl9P8qDLdUQII4tpK7nE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086390937655-dcd7pt7h0mf9ma9bebvc5dokqd3tb7ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

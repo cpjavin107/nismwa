@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical"
+    android:weightSum="7.5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparentSeventyBlack"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:rotation="180"
+                        android:src="@drawable/arrow_right_black"
+                        android:tint="@android:color/white" />
+
+                    <ImageView
+                        android:id="@+id/imgWhite"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/white_bg"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="30dp"
+                        android:padding="3dp"
+                        android:src="@drawable/profile_icon"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/imgEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="EDIT"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtPartnerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="15dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorTransparentSeventyBlack"
+                android:weightSum="7">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorTransparentWhite"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:minHeight="40dp"
+                        android:minWidth="40dp"
+                        android:src="@drawable/mobile"
+                        android:tint="@android:color/white" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtMobileHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MOBILE:"
+                        android:textColor="@android:color/white" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorTransparentSeventyBlack"
+                android:weightSum="7">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorTransparentWhite"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:minHeight="40dp"
+                        android:minWidth="40dp"
+                        android:src="@drawable/ic_business_white_24dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtOfficeHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OFFICE 1 :"
+                        android:textColor="@android:color/white" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtOffice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOffice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorTransparentSeventyBlack"
+                android:weightSum="7">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorTransparentWhite"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:minHeight="40dp"
+                        android:minWidth="40dp"
+                        android:src="@drawable/ic_business_white_24dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtOffice2Head"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OFFICE 2 :"
+                        android:textColor="@android:color/white" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtOffice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorTransparentSeventyBlack"
+                android:weightSum="7">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorTransparentWhite"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:minHeight="40dp"
+                        android:minWidth="40dp"
+                        android:src="@drawable/ic_home_white_24dp"
+                        android:tint="@android:color/white" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtResidenceHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RESIDENCE:"
+                        android:textColor="@android:color/white" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtResidence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorTransparentSeventyBlack"
+                android:weightSum="7">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorTransparentWhite"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:minHeight="40dp"
+                        android:minWidth="40dp"
+                        android:src="@drawable/ic_email_white_24dp"
+                        android:tint="@android:color/white" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtEmailHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="E-MAIL:"
+                        android:textColor="@android:color/white" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorTransparentSeventyBlack"
+                android:weightSum="7">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorTransparentWhite"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:minHeight="40dp"
+                        android:minWidth="40dp"
+                        android:src="@drawable/network"
+                        android:tint="@android:color/white" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtWebHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GST No. :"
+                        android:textColor="@android:color/white" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtWeb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDealMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorTransparentSeventyBlack"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtDealHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Deals In : "
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtDealEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_transparent_border_white"
+                        android:padding="5dp"
+                        android:text="Edit"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtDeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/llVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"></LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtAddContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/colorTransparentSeventyBlack"
+                    android:padding="10dp"
+                    android:text="Add to Contact"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtShareContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/colorTransparentSeventyBlack"
+                    android:padding="10dp"
+                    android:text="Share Contact"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorTransparentSeventyBlack">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <include
+                layout="@layout/common_adds_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

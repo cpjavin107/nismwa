@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparentFiftyBlack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtSearchTitleHd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Search by Name"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/etSearchTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_border_fill_white"
+                android:hint="ex. Dinesh Aggarwal"
+                android:inputType="textPersonName|textCapSentences|textAutoCorrect"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorEditHint"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtKeywordHd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Search by Firm Name"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/etKeyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_border_fill_white"
+                android:hint="ex. ABC Pvt Ltd"
+                android:inputType="textPostalAddress|textCapSentences|textAutoCorrect"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorEditHint"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtBlockHd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Block"
+                        android:textColor="@android:color/white"
+                        android:textSize="16dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtBlock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtBlockHd"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_border_fill_white"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:drawableTint="@android:color/black"
+                        android:hint="Block"
+                        android:padding="12dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorEditHint"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="2">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtFreshnessHd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search by Address"
+                        android:textColor="@android:color/white"
+                        android:textSize="16dp" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtFreshnessHd"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_border_fill_white"
+                        android:drawableTint="@android:color/black"
+                        android:hint="ex. a1-401"
+                        android:inputType="textPostalAddress|textCapSentences|textAutoCorrect"
+                        android:padding="12dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorEditHint"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtLocationHd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Search by Deals in"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_border_fill_white"
+                android:clickable="true"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:drawableTint="@android:color/black"
+                android:hint="ex. Metal"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorEditHint"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtApplyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorButtonOrange"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="10dp"
+                android:text="Apply"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
